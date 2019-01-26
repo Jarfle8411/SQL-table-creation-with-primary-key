@@ -1,0 +1,14 @@
+CREATE TABLE customers
+(
+  cust_id      INT        NOT NULL IDENTITY(1,1),
+  cust_name    NCHAR(50)  NOT NULL ,
+  cust_address NCHAR(50)  NULL ,
+  cust_city    NCHAR(50)  NULL ,
+  cust_state   NCHAR(5)   NULL ,
+  cust_zip     NCHAR(10)  NULL ,
+  cust_country NCHAR(50)  NULL ,
+  cust_contact NCHAR(50)  NULL ,
+  cust_email   NCHAR(255) NULL
+);
+ALTER TABLE customers
+ADD CONSTRAINT pk_customers PRIMARY KEY (cust_id);
